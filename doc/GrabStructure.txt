@@ -1,0 +1,11 @@
+What is the structure of grab?
+
+Grab starts a server and listens on port 222 for incoming clients.
+
+When a client connects, grab spawns a function to deal with the client.
+
+Grab will recieve requests from clients and process them, for example with button requests, a button will be added to the client's scene.
+
+Grab has another process which is drawing scenes.
+Whenever a scene is modified, grab will draw it.
+This is done through channels, there is no shared memory.
